@@ -70,8 +70,7 @@
 
       // Tăng giá trị và cập nhật vào phần tử <p>
       currentCount++;
-      countParagraph.decrease = currentCount;
-      // countParagraph.textContent = currentCount;
+      countParagraph.textContent = currentCount;
 }    
     function removeFromCart(itemId) {
         if (cart[itemId]) {
