@@ -5,16 +5,12 @@
     function addToCart(itemId, price) {
         if (cart[itemId]) {
           cart[itemId].quantity += 1;
-        } else {
-          cart[itemId] = {
-            price: price,
-            quantity: 1,
-          };
+        } 
         }
 
         updateCartUI();
         increase();
-      }
+      
 
 
       // Hàm cập nhật giao diện giỏ hàng
