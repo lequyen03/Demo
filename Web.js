@@ -73,17 +73,7 @@
       countParagraph.decrease = currentCount;
       // countParagraph.textContent = currentCount;
 }    
-    function removeFromCart(itemId) {
-        if (cart[itemId]) {
-            if (cart[itemId].quantity > 1) {
-                cart[itemId].quantity -= 1;
-            } else {
-            delete cart[itemId]; // Xóa sản phẩm khỏi giỏ hàng nếu số lượng bằng 1
-    }
-    updateCartUI();
-    decrease();
-  }
-}
+ 
 
     function decrease(count){
     // Lấy giá trị hiện tại của phần tử <p>
