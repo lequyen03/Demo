@@ -46,8 +46,6 @@
         totalPriceElement.textContent = totalPrice;
       }
 
-    const toggleImage = document.getElementById("toggleImage");
-    const content = document.getElementById("content");
 
     // Thêm sự kiện click
     toggleImage.addEventListener("click", function() {
