@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VQ badminton</title>
+	<link rel="stylesheet" href="Web.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<body>
+	<div class="wrapper" >
+		<div class="cart" id="content" style="display: none;">
+		<h2>Giỏ hàng</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Tùy chọn</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <p>Tổng tiền:<span id="total-price">0</span>VNĐ</p>
+      <button id="button1">Đặt hàng</button>
+    </div>
+	</div>
+		<div class="header">
+			<a href="" class="logo">
+				<img src="https://aocaulongthietke.com/wp-content/uploads/2022/10/Mau-logo-doi-club-cau-lac-bo-cau-long-thiet-ke-dep-1-400x400.png" alt="">
+			</a>
+						<div id="tieude">
+							<div id="ten">VAN QUYEN BADMINTON</div>
+						</div>
+			<div class="menu">
+				<div class="item">
+					<a href="">Trang chủ</a>
+				</div>
+				<div class="item">
+					<a href="">Sản phẩm</a>
+				</div>
+				<div class="item">
+					<a href="">Blog</a>
+				</div>
+				<div class="item">
+					<a href="">Liên hệ</a>
+				</div>
+			</div>
+			<div class="actions">
+				<span class="material-symbols-outlined" id="toggleImage">shopping_cart</span>
+				<p id="count">0</p>
+			</div>
+			</div>
+	</div>
+		</div>
+		<div class="banner">
+			<div class="box-left">
+				<h2>
+					<span>VỢT CẦU LÔNG</span>
+					<br>
+					<span>CAO CẤP</span>
+				</h2>
+				<p>Chuyên cung cấp vợt cầu lông chính hãng, chất lượng tốt nhất đến tay người chơi </p>
+				<button>Mua Ngay</button>
+			</div>
+			<div class="to-bottom">
+				<a href="">
+					<img src="imagine/4.png" alt="">
+				</a>
+			</div>
+	</div>
+	<div class="wp-product">
+		<h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+		<ul class="list">
+			<div class="item" id="product1">
+				<img src="imagine/tec9.webp" alt="">
+				<div class="name">Vợt Cầu Lông Lining Tectonic 9 Chính Hãng</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.500.000 VNĐ</div>
+				<button id="increaseButton1" onclick="addToCart('Vợt Cầu Lông Lining Tectonic 9 Chính Hãng', 3500000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product2">
+				<img src="imagine/bld.webp" alt="">
+				<div class="name">Vợt Cầu Lông Lining Bladex 900 Max Xanh</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">4.080.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining Bladex 900 Max Xanh', 4080000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product3">
+				<img src="imagine/ax60.webp" alt="">
+				<div class="name">Vợt Cầu Lông Lining Axforce 60 Chính Hãng</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.939.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining Axforce 60 Chính Hãng', 3939000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product4">
+				<img src="imagine/hbt.webp" alt="">
+				<div class="name">Vợt Cầu Lông Lining Halbertec 8000 Chính Hãng</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">5.490.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining Halbertec 8000 Chính Hãng', 5490000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product5">
+				<img src="imagine/phong.webp" alt="">
+				<div class="name"> Vợt Cầu Lông Lining - Phong Chính Hãng nội địa</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.100.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining - Phong Chính Hãng nội địa', 3100000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product6">
+				<img src="imagine/lam.webp" alt="">
+				<div class="name">Vợt Cầu Lông Lining - Lâm Chính Hãng nội địa</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.100.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining - Lâm Chính Hãng nội địa', 3100000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product7">
+				<img src="imagine/son.webp" alt="">
+				<div class="name"> Vợt Cầu Lông Lining - Sơn Chính Hãng nội địa</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.100.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining - Sơn Chính Hãng nội địa', 3100000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product8">
+				<img src="imagine/hoa.webp" alt="">
+				<div class="name">Vợt Cầu Lông Lining - Hỏa Chính Hãng nội địa</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.100.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Lining - Hỏa Chính Hãng nội địa', 3100000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product9">
+				<img src="imagine/fl.webp" alt="">
+				<div class="name">Vợt Cầu Lông Yonex NanoFlare FL Chính Hãng</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">3.500.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Yonex NanoFlare FL Chính Hãng', 3500000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product10">
+				<img src="imagine/1000z.webp" alt="">
+				<div class="name">Vợt Cầu Lông Yonex Nanoflare 1000Z (Mã JP)</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">4.600.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Yonex Nanoflare 1000Z (Mã JP)', 4600000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product11">
+				<img src="imagine/sv.webp" alt="">
+				<div class="name">Vợt Cầu Lông Yonex Astrox SV - Nội Địa (Mã JP)</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">3.500.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Yonex Astrox SV - Nội Địa (Mã JP)', 3500000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product12">
+				<img src="imagine/vt.webp" alt="">
+				<div class="name">Vợt Cầu Lông Yonex VOLTRIC LD FORCE RIO 2016</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">4.669.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Yonex VOLTRIC LD FORCE RIO 2016', 4669000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product13">
+				<img src="imagine/5s.webp" alt="">
+				<div class="name">Vợt Cầu Lông Victor BS12 - 55TH Limited Gift Box</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">5.990.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Victor BS12 - 55TH Limited Gift Box', 5990000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product14">
+				<img src="imagine/ope.webp" alt="">
+				<div class="name">Vợt Cầu Lông Victor One Piece - Sandai Kitetsu</div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">3.900.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Victor One Piece - Sandai Kitetsu', 3900000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product15">
+				<img src="imagine/thr.webp" alt="">
+				<div class="name">Vợt Cầu Lông Victor Thruster TK-F SE Chính Hãng </div>
+				<div class="desc">(Nội Địa Trung)</div>
+				<div class="price">5.590.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Victor Thruster TK-F SE Chính Hãng', 5590000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product16">
+				<img src="imagine/kw.webp" alt="">
+				<div class="name">Vợt Cầu Lông Kawasaki Blossom Pink Chính Hãng</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">1.440.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Kawasaki Blossom Pink Chính Hãng', 1440000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product17">
+				<img src="imagine/mzn.webp" alt="">
+				<div class="name">Vợt Cầu Lông Mizuno Altius 02 Solear (Mã JP)</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">3.990.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Mizuno Altius 02 Solear (Mã JP)', 3990000)">Thêm vào giỏ hàng</button>
+			</div>
+			<div class="item" id="product18">
+				<img src="imagine/mzn1.webp" alt="">
+				<div class="name">Vợt Cầu Lông Mizuno Fortius 29 Ultima - Tím Đen Cam</div>
+				<div class="desc">(Xuất xứ: Nhật Bản)</div>
+				<div class="price">4.500.000 VNĐ</div>
+				<button onclick="addToCart('Vợt Cầu Lông Mizuno Fortius 29 Ultima - Tím Đen Cam', 4500000)">Thêm vào giỏ hàng</button>
+			</div>
+		</ul>
+		<div class="list-page">
+			<div class="item">
+				<a href="">1</a>
+			</div>
+			<div class="item">
+				<a href="">2</a>
+			</div>
+			<div class="item">
+				<a href="">3</a>
+			</div>
+			<div class="item">
+				<a href="">4</a>
+			</div>
+		</div>
+	</div>
+	<div class="feedback">
+		<h2>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
+		<div class="cmt-body">
+			<ul class="list-comment">
+				<li class="item">
+					<div class="avt">
+						<img src="imagine/avt1.png" alt="">
+					</div>
+					<div class="name">Lê Văn Nam</div>
+					<div class="stars">
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+					</div>
+					<div class="text">
+						<p>Shop này có một chất lượng sản phẩm tốt và đa dạng với nhiều lựa chọn về vợt cầu lông từ các thương hiệu uy tín. Chất lượng dịch vụ và khả năng tư vấn ở đây thực sự đáng khen ngợi. Tôi rất hài lòng với trải nghiệm mua sắm ở shop này và sẽ quay lại vào lần sau.</p>
+					</div>
+				</li>
+				<li class="item">
+					<div class="avt">
+						<img src="imagine/avt5.png" alt="">
+					</div>
+					<div class="name">Nguyễn Văn Thành</div>					
+					<div class="stars">
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+					</div>
+					<div class="text">
+						<p>Mua sắm trực tuyến tại cửa hàng này rất thuận tiện và linh hoạt. Tôi có thể lựa chọn sản phẩm và đặt hàng từ bất kỳ đâu và bất kỳ khi nào tôi muốn.</p>
+					</div>
+				</li>
+				<li class="item">
+					<div class="avt">
+						<img src="imagine/avt4.png" alt="">
+					</div>
+					<div class="name">Nguyễn Thị Linh</div>					
+					<div class="stars">
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+					</div>
+					<div class="text">
+						<p>Giao hàng nhanh chóng và đáng tin cậy. Cửa hàng này thường cung cấp dịch vụ giao hàng nhanh, đảm bảo rằng tôi nhận được sản phẩm mình đặt hàng trong thời gian ngắn.</p>
+					</div>
+				</li>
+				<li class="item">
+					<div class="avt">
+						<img src="imagine/avt2.png" alt="">
+					</div>
+					<div class="name">Phạm Việt Anh</div>
+					<div class="stars">
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+					</div>
+					<div class="text">
+						<p>Cửa hàng online này cung cấp nhiều ưu đãi và giảm giá hấp dẫn, giúp tôi tiết kiệm tiền khi mua sắm trực tuyến.</p>
+					</div>
+				</li>
+				<li class="item">
+					<div class="avt">
+						<img src="imagine/avt3.png" alt="">
+					</div>
+					<div class="name">Vũ Văn Trung</div>
+					<div class="stars">
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+						<span>
+							<img src="imagine/star.png" alt="">
+						</span>
+					</div>
+					<div class="text">
+						<p>Hệ thống đánh giá và phản hồi của khách hàng giúp tôi có cái nhìn tổng quan về chất lượng và hiệu suất của các sản phẩm trước khi quyết định mua.</p>
+					</div>
+				</li>
+				<div class="page">
+			<div class="item">
+				<a href="">1</a>
+			</div>
+			<div class="item">
+				<a href="">2</a>
+			</div>
+			<div class="item">
+				<a href="">3</a>
+			</div>
+			<div class="item">
+				<a href="">4</a>
+			</div>
+		</div>
+			</ul>
+		</div>
+	</div>	
+	<div class="footer">
+		<div class="box">
+			<div class="logo">
+				<img src="https://aocaulongthietke.com/wp-content/uploads/2022/10/Mau-logo-doi-club-cau-lac-bo-cau-long-thiet-ke-dep-1-400x400.png" alt="">
+				<h5>VAN QUYEN BADMINTON</h5>
+			</div>
+		</div>
+		<div class="box">
+			<h3>NỘI DUNG</h3>
+			<ul class="quick-menu">
+				<div class="item">
+					<a href="">Trang chủ</a>
+				</div>
+				<div class="item">
+					<a href="">Sản phẩm</a>
+				</div>
+				<div class="item">
+					<a href="">Hotline:19001234</a>
+				</div>
+				<div class="share">
+					<img src="imagine/ttk.png" alt="">
+					<img src="imagine/fb.png" alt="">
+				</div>
+			</ul>
+		</div>
+		<div class="box">
+			<h3>LIÊN HỆ</h3>
+			<form action="">
+				<input type="text" placeholder="Địa chỉ email">
+				<button>Nhận tin nhắn</button>
+			</form>
+		</div>
+    </div>
+	<script src="Web.js"></script>
+</body>
+</html>

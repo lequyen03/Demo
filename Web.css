@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(https://st5.depositphotos.com/51185140/62400/v/450/depositphotos_624008316-stock-illustration-abstract-silhouette-badminton-player-black.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#tieude{
+    width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    position: relative
+}
+#ten{
+    font-size: 50px;
+    font-weight: bold;
+    animation: leftstyle 5s linear infinite;
+}
+@keyframes leftstyle{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.menu{
+    list-style:none;
+    display:flex;
+    margin-right: -90px;
+}
+.menu .item a:hover{
+    color: red;
+    font-weight: bold;
+}
+.menu .item{
+    margin: 0px 25px;
+}
+img{
+    width: 100px;
+}
+.actions img{
+    width: 50px;
+}
+.menu .item a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.actions{
+    display: flex;
+}
+.actions p{
+    margin: 0px;
+    color: white;
+    background: red;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    border-radius: 40%;
+}
+#count{
+    font-size: 20px;
+}
+.actions .item{
+    margin-left: 22px;
+}
+.header .actions .material-symbols-outlined{
+    font-size: 48px;
+}
+
+.banner{
+    width: 100%;
+    background-image: url('https://krishbadminton.myshopify.com/cdn/shop/files/Krish_Badminton--Banner-Img--2--1740X990.jpg?v=1614718328');
+    background-size: cover;
+    display: flex;
+    height: 742px;
+    padding: 0px 133px;
+    position: relative;
+}
+.banner .box-left{
+    width: 50%;  
+    padding-top: 82px;
+}
+
+
+.banner .box-left h2{
+    font-size: 60px;
+    margin-top: 75px;
+    color: white;
+}
+
+.banner .box-left p{
+    color: white;
+    font-size: 20px;
+}
+
+.banner .box-left button{
+    width: 200px;
+    height: 50px;
+    margin-top:41px;
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.banner .box-left button:hover {
+    background: orange;
+}
+.to-bottom{
+    position:absolute;
+    color: red;
+    bottom: -28px;
+    left: 47%;
+    transform: translatex(50%);
+}
+.to-bottom img{
+    background: gray;
+    width: 50px;
+    border-radius: 50%;
+}
+.wp-product{
+    padding-top: 80px;
+    padding-bottom: 78px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.wp-product h2{
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 58px;
+    color: white;
+}
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list .item{
+    width: 408px;
+    height: 456px;
+    background:   #555555;
+    border-radius:10px ;
+    margin-bottom: 50px;
+}
+
+.list .item img{
+    width: 339px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.list .item .name{
+    text-align: center;
+    color: white;
+}
+.list .item .name:hover{
+    color:#FFFF33;
+}
+.list .item .desc{
+    text-align: center;
+    color: whitesmoke;
+}
+.list .item .price{
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+}
+.list .item button{
+    margin-left: 141px;
+    font-weight: bold;
+} 
+.list .item button:hover{
+    color: black;
+    background-color: yellow;
+    border: none;
+}
+.wp-product{
+    background-image:url(https://i.pinimg.com/originals/23/1a/b1/231ab1ad7761163944343c96deed7b56.jpg);
+    background-size: cover;
+}
+
+.list-page{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item{
+    margin: 0px 20px;
+    width: 37px;
+    height: 37px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a{
+    color: black;
+    text-decoration: none;
+}
+.list-page .item:hover{
+    background: red;
+}
+.feedback{
+    width: 100%;
+    height: 1195px;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: auto;
+    background: #63f1f1;
+
+}
+.feedback h2{
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: black;
+}
+
+
+.cmt-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    list-style: none;
+    display: flex;
+}
+
+.list-comment{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.list-comment .item{
+    margin-bottom: 12px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    background: dimgray;
+    border-radius: 20px;
+}
+
+.list-comment .item .avt{
+    text-align: left;
+    margin-top: 0px;
+}
+.list-comment .item .avt img{
+    width: 50px;
+}
+.list-comment .item .stars img{
+    margin: 3px;
+    width: 20px;
+}
+.list-comment .item .stars{
+    display: flex;
+    width: 30px;
+}
+
+.list-comment .item .name{
+    text-align: left;
+    font-weight: bold;
+    color: white;
+}
+.list-comment .item .text{
+    padding: 7px 0px;
+    color: white;
+    justify-content: center;
+}
+.page{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page .item{
+    margin: 0px 20px;
+    width: 37px;
+    height: 37px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px 14px;
+}
+.page .item a{
+    color: black;
+    text-decoration: none;
+}
+.page .item:hover{
+    background: yellow;
+}
+.footer{
+    width: 100%;
+    background-image: url(https://st5.depositphotos.com/51185140/62400/v/450/depositphotos_624008316-stock-illustration-abstract-silhouette-badminton-player-black.jpg);
+    background-size: cover;
+    height: 322px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .box{
+    width: 250px;
+    color: white;
+}
+.footer .box .logo{
+    font-size: 30px;
+    width: 345px;
+    color: white;
+}
+.footer .box .logo img{
+    width: 100px;
+    text-align: center;
+    margin-left: 100px;
+}
+.footer .box .quick-menu{
+    margin-top: 40px;
+}
+.footer .box .quick-menu .item{
+    margin-bottom: 12px;
+}
+.footer .box .quick-menu .item a{
+    color: white;
+    text-decoration:none;
+}
+.footer .box .quick-menu .item a:hover{
+    color: white;
+    text-decoration:underline;
+}
+
+.footer .box form input{
+    width:294px;
+    height: 30px;
+    background:transparent;
+    padding-left:20px;
+    color: white;
+    margin-top: 30px;
+}
+.footer .box form button{
+    background: black;
+    box-shadow: 1px 0px 3px gray;
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+    color: white;
+}
+.cart {
+  float: left;
+  background: #FFCCCC;
+  width: 500px;
+  height: 600px;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  left: 963px;
+  top: 95px;
+  overflow: scroll;
+}
+.cart button{
+    width: 34px;
+}
+.cart button:hover{
+    background-color: red;
+}
+#button1{
+    width: 100px;
+    margin-top: 15px;
+    background-color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content:center ;
+}
+#button1:hover{
+    background-color: lightgreen;
+}
+.share img{
+    width: 40px;
+}
